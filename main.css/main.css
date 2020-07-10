@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  
+  :root {
+    --main-color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  .text {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #666666;
+  }
+  .container {
+
+    margin: 0 auto;
+  }
+  .header-box {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 30px;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .name a {
+    color: var(--main-color);
+    font-size: 20px;
+  }
+  .start {
+    display: flex;
+    margin-bottom: 126px;
+  }
+  .start-item {
+    list-style: none;
+  }
+  .start-link {
+    color: var(--main-color);
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.2s linear;
+  }
+  .start-link:hover,
+  .start-link:focus {
+    border-color: #fff;
+  }
+  .first-title {
+    color: var(--main-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .block {
+    margin: 0 auto;
+    background-image: url(../img/pictures/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .block-text {
+    color: var(--main-color);
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 0 50px 18px;
+  }
+  .find-friends {
+    padding: 11px 46px;
+    background-color: #ff4e50;
+    border: none;
+    color: var(--main-color);
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 138px;
+  }
+  .theme {
+    padding-top: 227px;
+    text-align: center;
+  }
+  .friends {
+    text-align: center;
+    padding-top: 68px;
+  }
+  .friends-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .friends-list-item {
+    list-style: none;
+    text-align: center;
+    max-width: 220px;
+    
+    margin: 0 50px;
+  }
+  .friends-item {
+    position: relative;
+    margin: 25px 0;
+  }
+  .friends-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 45px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .friends-name {
+    margin-bottom: 16px;
+    font-size: 14px;
+
+  }
+  .bradly-hunter::after {
+    content: "";
+    background-color: #ff4e50;
+    background-image: url(../img/icons/Shape\ 128.png);
+  }
+  .lucas-marsha::after {
+    content: "";
+    background-color: #ffa507;
+    background-image: url(../img/icons/Shape\ 155.png);
+  }
+  .heather-walker::after {
+    content: "";
+    background-color: #1cd7ad;
+    background-image: url(../img/icons/Shape\ 153.png);
+  }
+  .bradly-hunter-2::after {
+    content: "";
+    background-color: #4e73db;
+    background-image: url(../img/icons/Shape\ 170.png);
+  }
+  .btn {
+    border: 2px solid #ff4e50;
+    background-color: #fff;
+    color: #ff4e50;
+    padding: 12px 70px;
+    border-radius: 20px;
+    margin: 28px 0 58px 0;
+    transition: all 0.2s linear;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: #ff4e50;
+    color: #fff;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+    .header-box {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 100%;
+      padding-top: 50px;
+      z-index: 5;
+    }
+    .main-nav {
+      display: flex;
+
+      justify-content: space-between;
+      flex-direction: row;
+      width: 670px;
+    }
+    .start {
+      display: flex;
+      margin-bottom: 0;
+    }
+  
+    .first-title {
+      font-size: 52px;
+    }
+    .block {
+      background-image: url(../img/pictures/Vector\ Smart\ Object\ tablet.png);
+      position: relative;
+    }
+    .block::after {
+      content: "";
+      background-color: rgb(26, 25, 21);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+    .block-text {
+      font-size: 24px;
+      margin-bottom: 35px;
+    }
+
+    .friends {
+      max-width: 492px;
+    }
+    .friends-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .friends-list-item {
+      margin: 0;
+    }
+    .find-friends {
+      padding: 11px 20px;
+      margin-bottom: 234px;
+    }
+    .btn {
+      padding: 12px 30px;
+    }
+    .one {
+      order: 1;
+    }
+    .two {
+      order: 2;
+    }
+    .three {
+      order: 3;
+    }
+    .four {
+      order: 4;
+    }
+  }
+  
+  @media (min-width: 940px) {
+    .container {
+      width: 940px;
+    }
+    .block {
+      background-image: url(../img/pictures/Vector\ Smart\ Object.png);
+      position: relative;
+    }
+    .friends-list {
+      display: flex;
+    }
+    .friends-list-item {
+      margin: 0;
+    }
+    .friends {
+      max-width: 100%;
+    }
+  }
